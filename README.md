@@ -8,7 +8,7 @@
 
 ## Canal:
 Tiene ciertos parametros como el ruido que determina la probabilidad de que hayan errores
-*-Tasa de Errores*
+*Tasa de Errores*
 *Retraso minimo relativo a la distancia entre estaciones*
 * Esto es un factor que multiplicada a la distancia da el retraso para que llegue a la otra estacion
 
