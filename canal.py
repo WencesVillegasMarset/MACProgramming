@@ -18,7 +18,7 @@ class Canal(object):
         if Canal.__instance != None:
          raise Exception("Singleton!")
         else:
-            self.tasa_errores = 0.15
+            self.tasa_errores = 0.30
             self.retraso = 0.05
             self.probabilidad_perdida = 0.05
             self.ocupado = False

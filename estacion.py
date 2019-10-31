@@ -3,6 +3,7 @@ from trama import Trama
 from canal import Canal
 import time
 import numpy as np
+import copy
 class Estacion(object):
 
     def __init__(self, direccion_mac):
@@ -20,7 +21,7 @@ class Estacion(object):
         self.getCanal()
         self._recibir_desde_red()
         trama = self._encapsular_paquete(estacion_destino.direccion_mac)
-        self.ultima_trama = trama # en caso de ser necesario reenvio, recordar
+        self.ultima_trama = copy.deepcopy(trama) # en caso de ser necesario reenvio, recordar
         self.canal.envio(trama, self, estacion_destino)
         self.canal.liberarCanal()
 

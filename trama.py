@@ -1,6 +1,6 @@
 import numpy as np
 
-TRAMA_TYPES = ['control', 'nak', 'datos']
+TRAMA_TYPES = ['ack', 'nak', 'datos']
 
 
 class Trama(object):

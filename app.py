@@ -17,11 +17,13 @@ def estacion(index):
     else:
         origen = estacion_2
         destino = estacion_1
-    while True:
+    
+    for i in range(30):
         origen.send(destino)
         time.sleep(np.random.random() * 10)
 if __name__ == "__main__":
     # creamos un hilo para cada estacion
+    #estacion(1)
     threads = list()
     for index in range(2):
         x = threading.Thread(target=estacion, args=(index,))
